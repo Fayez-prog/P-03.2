@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="16dp"
+        android:text="Jane Doe"
+        android:textSize="24sp"/>
+    <TextView
+        android:id="@+id/number_to_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/_14155551212" />
+
+    <ImageButton
+        android:id="@+id/phone_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_name"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@id/number_to_call"
+        android:layout_toRightOf="@id/number_to_call"
+        android:contentDescription="@string/make_a_call"
+        android:onClick="dialNumber"
+        android:src="@drawable/ic_call_black_24dp" />
+    <EditText
+        android:id="@+id/sms_message"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_to_call"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:hint="@string/enter_message_here"
+        android:inputType="textMultiLine"/>
+    <ImageButton
+        android:id="@+id/message_icon"
+        android:contentDescription="@string/send_a_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_toRightOf="@id/sms_message"
+        android:layout_toEndOf="@id/sms_message"
+        android:layout_below="@id/phone_icon"
+        android:src="@drawable/ic_message_black_24dp"
+        android:onClick="smsSendMessage"/>
+</RelativeLayout>
+
+
+

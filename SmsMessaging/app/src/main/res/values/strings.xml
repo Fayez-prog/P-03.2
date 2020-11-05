@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmsMessaging</string>
+    <string name="enter_a_phone_number">entrer a phone number</string>
+    <string name="enter_message_here">Enter message here</string>
+    <string name="send_a_message">Send a message</string>
+    <string name="permission_not_granted">permission</string>
+    <string name="failure_permission">failure</string>
+    <string name="retry">retry</string>
+</resources>
